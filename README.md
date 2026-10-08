@@ -494,6 +494,16 @@ Haalt photography data op met video URL's.
 
 ## 🚢 Deployment
 
+### Branches
+
+| Branch | Deploy | URL |
+|---|---|---|
+| `main` | Productie | TODO (mier.as heeft nu geen DNS-record) |
+| `staging` | Branch deploy (goedgekeurde features, nog niet live) | TODO `staging--<netlify-site>.netlify.app` |
+| PR's | Deploy preview | link in de PR |
+
+Features gaan via een PR naar `staging`. Naar `main` alleen gebundelde releases (PR `staging → main`) en hotfixes. Commits met alleen documentatie (`*.md`, `.github/`, `.vscode/`) starten geen build. Zie `~/Code/_standards/DEPLOY.md`.
+
 ### Netlify
 
 Het project is geconfigureerd voor Netlify deployment:
